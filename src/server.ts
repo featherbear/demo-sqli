@@ -103,7 +103,7 @@ server.use((req, res, next) => {
 
 export default function listen() {
     let HOST = process.env["HOST"] || "0.0.0.0"
-    let PORT = process.env["PORT"] || 7000
+    let PORT = process.env["PORT"] || 3000
     server.listen(PORT, HOST, () => {
         console.info(`Server listening on ${HOST}:${PORT}`)
     })
